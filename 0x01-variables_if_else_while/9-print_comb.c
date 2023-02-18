@@ -9,18 +9,16 @@ int main(void)
 {
 	int c;
 
-	for (c = 48; c <= 57; c++)
+	for (c = 48; c < 58; c++)
 	{
-		if (c < 57)
+		putchar(c);
+		if (c != 57)
 		{
-			putchar(c);
 			putchar(',');
 			putchar(' ');
-			continue;
 		}
-		else if (c == 57)
-			putchar(c);
 	}
 	putchar('\n');
+
 	return (0);
 }

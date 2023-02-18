@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	char c;
+	int c;
 
-	for (c = '0'; c <= '9'; c++)
+	for (c = 48; c <= 57; c++)
 	{
-		if (c < '9')
+		if (c < 57)
 		{
 			putchar(c);
 			putchar(',');
 			putchar(' ');
 			continue;
 		}
-		else if (c == '9')
+		else if (c == 57)
 			putchar(c);
 	}
 

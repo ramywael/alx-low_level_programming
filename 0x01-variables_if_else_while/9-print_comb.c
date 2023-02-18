@@ -21,6 +21,6 @@ int main(void)
 		else if (c == 57)
 			putchar(c);
 	}
-
+	putchar('\n');
 	return (0);
 }
